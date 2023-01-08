@@ -1,0 +1,177 @@
+.audioPlayer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 0.5rem 1rem 0;
+  margin: 1rem 0;
+  background: var(--highlight1);
+  border-radius: 10px;
+}
+
+.title {
+  grid-column: 1/4;
+  height: 1rem;
+}
+
+.playPause {
+  background: var(--highlight3);
+  border: none;
+  margin: 1rem 1rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--highlight1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  position: relative;
+  left: 2.6px;
+}
+
+.timeAndProgress {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding-right: 1rem;
+}
+
+.currentTime,
+.duration {
+  font-family: monospace;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.duration {
+}
+
+.currentTime {
+  margin-left: 1rem;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+}
+
+.progressBar {
+  --seek-before-width: 0;
+  margin: 0 1rem 0 1rem;
+  appearance: none;
+  background: var(--wfBackground);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 8 / 1;
+  outline: none;
+}
+
+.progressBar:hover {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+/* progress bar - safari */
+.progressBar::-webkit-slider-runnable-track {
+  background: transparent;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-track {
+  background: transparent;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+}
+
+.progressBar::-moz-focus-outer {
+  border: 0;
+}
+
+/* progress bar - chrome and safari */
+.progressBar::before {
+  content: '';
+  height: 11px;
+  width: var(--seek-before-width);
+  background: var(--highlight3);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-progress {
+  background: var(--highlight3);
+  height: 100%;
+}
+
+/* knobby - chrome and safari */
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  /* background-color: var(--knobby); */
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  position: relative;
+  margin: -2px 0 0 0;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knobby while dragging - chrome and safari */
+.progressBar:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  /* background: var(--selectedKnobby); */
+  background: transparent;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+/* knobby - firefox */
+.progressBar::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: transparent;
+  /* background-color: var(--knobby); */
+  background: transparent;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knobby while dragging - firefox */
+.progressBar:active::-moz-range-thumb {
+  transform: scale(1.2);
+  /* background: var(--selectedKnobby); */
+  background: transparent;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
