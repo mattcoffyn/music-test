@@ -21,7 +21,7 @@ export default function Index() {
           <Category key={id} catId={catId} title={title} catText={catText}>
             <aside className="players">
               {data.map(
-                ({ name, path, id, svgPath, category }) =>
+                ({ name, path, id, svgPath, category, type, duration }) =>
                   category === catId && (
                     <AudioPlayer
                       key={id}
@@ -31,6 +31,8 @@ export default function Index() {
                       svgPath={svgPath}
                       trackPlaying={trackPlaying}
                       updateTrack={updateTrack}
+                      type={type}
+                      staticDuration={duration}
                     />
                   )
               )}

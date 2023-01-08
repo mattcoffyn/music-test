@@ -14,6 +14,8 @@ const AudioPlayer = ({
   svgPath,
   trackPlaying,
   updateTrack,
+  type,
+  staticDuration,
 }) => {
   // state
   const [isPlaying, setIsPlaying] = useState(false);
@@ -83,7 +85,9 @@ const AudioPlayer = ({
   return (
     <div className={styles.audioPlayer}>
       <span className={styles.title}>{name}</span>
-      <audio ref={audioPlayer} src={pathName} preload="metadata"></audio>
+      <audio ref={audioPlayer} preload="auto">
+        <source src={pathName} type={type} />
+      </audio>
       <button onClick={togglePlayPause} className={styles.playPause}>
         {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}
       </button>
@@ -101,13 +105,15 @@ const AudioPlayer = ({
             onChange={changeRange}
             style={{
               maskImage: `url(${svgPath})`,
+              WebkitMaskImage: `url(${svgPath})`,
             }}
           />
         </div>
 
         {/* duration */}
         <div className={styles.duration}>
-          {duration && !isNaN(duration) && calculateTime(duration)}
+          {/* {duration && !isNaN(duration) && calculateTime(duration)} */}
+          {staticDuration}
         </div>
       </div>
     </div>

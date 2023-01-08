@@ -4,69 +4,89 @@
     "name": "040123x",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673178286/Music/music/nxy9isfjpst2gu4ze8vw.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673188132/Music/music/io8lktpv9muuarwdjxgg.png",
-    "category": "music"
+    "category": "music",
+    "type": "audio/mpeg",
+    "duration": "03:29"
   },
   {
     "id": 2,
     "name": "Deep Space (Peace)",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138692/Music/jxqmdsufbhlns3yap3m9.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182864/Music/ula9tgmvxud89sjdyvae.svg",
-    "category": "spaces"
+    "category": "spaces",
+    "type": "audio/mpeg",
+    "duration": "01:00"
   },
   {
     "id": 3,
     "name": "Grand Temple (Discovery)",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138693/Music/stqyjxjemgs4whea9eb3.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182883/Music/bxlnyuovbyuwbnhdgent.svg",
-    "category": "spaces"
+    "category": "spaces",
+    "type": "audio/mpeg",
+    "duration": "01:00"
   },
   {
     "id": 4,
     "name": "The Hills (Trapped)",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138693/Music/kxsv3ahnw8tgcg5lnxnk.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182901/Music/ngivjdofg8k6jaiv0tal.svg",
-    "category": "spaces"
+    "category": "spaces",
+    "type": "audio/mpeg",
+    "duration": "01:00"
   },
   {
     "id": 5,
     "name": "Ambient Suspense Loop",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673187655/Music/adventuregame/uyq20aqkvjgrkmjr9qg1.ogg",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673187666/Music/adventuregame/swos8t4i0nmnan4g25ql.svg",
-    "category": "adventureGame"
+    "category": "adventureGame",
+    "type": "audio/ogg",
+    "duration": "01:00"
   },
   {
     "id": 6,
     "name": "Secret Stone Door Sting",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673187653/Music/adventuregame/wdb8glnttyksicqc3bhp.ogg",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673187764/Music/adventuregame/drc8zmzeisfsaxwaksah.svg",
-    "category": "adventureGame"
+    "category": "adventureGame",
+    "type": "audio/ogg",
+    "duration": "00:05"
   },
   {
     "id": 7,
     "name": "Corridor Suspense Loop",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673187654/Music/adventuregame/em9yro7dkrwwdaq5yyfb.ogg",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673187807/Music/adventuregame/duebtbuxi0v1aft8chzy.svg",
-    "category": "adventureGame"
+    "category": "adventureGame",
+    "type": "audio/ogg",
+    "duration": "01:00"
   },
   {
     "id": 8,
     "name": "Droid Battle Loop",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673187655/Music/adventuregame/hzdxkwrla16icl3f7aht.ogg",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673187849/Music/adventuregame/hpv0k5v772tjgxbzouq4.svg",
-    "category": "adventureGame"
+    "category": "adventureGame",
+    "type": "audio/ogg",
+    "duration": "01:00"
   },
   {
     "id": 9,
     "name": "Gürlitzer",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673188470/Music/music/e9iuiu4jlboog3fyk6tq.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673188471/Music/music/nneogaehg3zklphzok03.svg",
-    "category": "music"
+    "category": "music",
+    "type": "audio/mpeg",
+    "duration": "04:03"
   },
   {
     "id": 10,
     "name": "Hackers",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673188854/Music/brief/vjs4maenx9q8h5z6l47y.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673188855/Music/brief/st7mkv50qwhrhrvkak7b.svg",
-    "category": "brief"
+    "category": "brief",
+    "type": "audio/mpeg",
+    "duration": "04:54"
   }
 ]

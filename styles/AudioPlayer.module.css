@@ -62,8 +62,11 @@
   margin: 0 1rem 0 1rem;
   appearance: none;
   background: var(--wfBackground);
+  /* -webkit-mask-image: url(https://res.cloudinary.com/dsjs9ozws/image/upload/v1673188471/Music/music/nneogaehg3zklphzok03.svg); */
   mask-size: contain;
+  -webkit-mask-size: contain;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   width: 100%;
   aspect-ratio: 8 / 1;
   outline: none;
@@ -128,7 +131,6 @@
   width: 15px;
   border-radius: 50%;
   border: none;
-  /* background-color: var(--knobby); */
   cursor: move; /* fallback if grab cursor is unsupported */
   cursor: grab;
   cursor: -moz-grab;
@@ -155,7 +157,6 @@
   width: 15px;
   border-radius: 50%;
   border: transparent;
-  /* background-color: var(--knobby); */
   background: transparent;
   cursor: move; /* fallback if grab cursor is unsupported */
   cursor: grab;
