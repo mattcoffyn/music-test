@@ -89,7 +89,7 @@ const AudioPlayer = ({
       {!isActive ? (
         <div className={styles.audioPlayer}>
           <span className={styles.title}>{name}</span>
-          <audio ref={audioPlayer} preload="auto">
+          <audio ref={audioPlayer} preload="metadata">
             <source src={pathName} type={type} />
           </audio>
           <button onClick={togglePlayPause} className={styles.playPause}>
