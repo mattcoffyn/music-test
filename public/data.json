@@ -10,15 +10,6 @@
   },
   {
     "id": 2,
-    "name": "Deep Space (Peace)",
-    "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138692/Music/jxqmdsufbhlns3yap3m9.mp3",
-    "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182864/Music/ula9tgmvxud89sjdyvae.svg",
-    "category": "spaces",
-    "type": "audio/mpeg",
-    "duration": "01:00"
-  },
-  {
-    "id": 3,
     "name": "Grand Temple (Discovery)",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138693/Music/stqyjxjemgs4whea9eb3.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182883/Music/bxlnyuovbyuwbnhdgent.svg",
@@ -27,10 +18,19 @@
     "duration": "01:00"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "The Hills (Trapped)",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138693/Music/kxsv3ahnw8tgcg5lnxnk.mp3",
     "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182901/Music/ngivjdofg8k6jaiv0tal.svg",
+    "category": "spaces",
+    "type": "audio/mpeg",
+    "duration": "01:00"
+  },
+  {
+    "id": 4,
+    "name": "Deep Space (Peace)",
+    "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673138692/Music/jxqmdsufbhlns3yap3m9.mp3",
+    "svgPath": "https://res.cloudinary.com/dsjs9ozws/image/upload/v1673182864/Music/ula9tgmvxud89sjdyvae.svg",
     "category": "spaces",
     "type": "audio/mpeg",
     "duration": "01:00"
