@@ -74,7 +74,7 @@ const AudioPlayer = ({
 
   const changePlayerCurrentTime = () => {
     const progressPercentage = (progressBar.current.value / duration) * 100;
-    console.log(progressPercentage);
+    console.log(progressBar.current.value);
     waveformFill.current.style.setProperty(
       '--seek-before-width',
       `${progressPercentage}%`
