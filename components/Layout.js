@@ -1,7 +1,7 @@
 export default function Layout({ children }) {
   return (
     <>
-      <main className={`page `}>{children}</main>
+      <main className="page">{children}</main>
     </>
   );
 }

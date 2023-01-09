@@ -1,7 +1,9 @@
 .audioPlayer {
+  width: 100%;
+  max-width: 970px;
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 0;
   /* background: var(--highlight1); */
   border-top: 4px solid var(--primary);
@@ -38,10 +40,13 @@
 }
 
 .timeAndProgress {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  column-gap: 0.5rem;
-  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* display: grid; */
+  /* grid-template-columns: auto 1fr auto; */
+  /* column-gap: 0.5rem; */
+  /* padding-right: 1rem; */
 }
 
 .currentTime,
@@ -60,8 +65,9 @@
   --seek-before-width: 0;
   height: 100%;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 650px;
+  /* max-width: 800px; */
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +85,7 @@
 }
 
 .progressBar {
+  margin: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
