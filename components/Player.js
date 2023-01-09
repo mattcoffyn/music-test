@@ -1,11 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Inter } from '@next/font/google';
-
-import styles from '../styles/AudioPlayer.module.css';
+import styled from 'styled-components';
 import { FaPlay } from 'react-icons/fa';
 import { FaPause } from 'react-icons/fa';
-
-const playerFont = Inter({ weight: '300', subsets: ['latin'] });
+import styles from '../styles/AudioPlayer.module.css';
 
 const AudioPlayer = ({
   trackId,
@@ -25,6 +22,7 @@ const AudioPlayer = ({
   // references
   const audioPlayer = useRef(); // reference our audio component
   const progressBar = useRef(); // reference our progress bar
+  const waveformFill = useRef(); // reference our progress bar
   const animationRef = useRef(); // reference the animation
 
   useEffect(() => {
@@ -75,7 +73,7 @@ const AudioPlayer = ({
   };
 
   const changePlayerCurrentTime = () => {
-    progressBar.current.style.setProperty(
+    waveformFill.current.style.setProperty(
       '--seek-before-width',
       `${(progressBar.current.value / duration) * 100}%`
     );
@@ -96,23 +94,29 @@ const AudioPlayer = ({
         <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
 
         {/* progress bar */}
-        <div className={styles.progressContainer}>
+        <div
+          className={styles.waveformContainer}
+          ref={waveformFill}
+          style={{
+            maskImage: `url(${svgPath})`,
+            WebkitMaskImage: `url(${svgPath})`,
+          }}
+        >
           <input
-            type="range"
             className={styles.progressBar}
+            type="range"
             defaultValue="0"
+            step="0.1"
             ref={progressBar}
             onChange={changeRange}
-            style={{
-              maskImage: `url(${svgPath})`,
-              WebkitMaskImage: `url(${svgPath})`,
-            }}
           />
         </div>
 
         {/* duration */}
         <div className={styles.duration}>
-          {/* {duration && !isNaN(duration) && calculateTime(duration)} */}
+          <span style={{ display: 'none' }}>
+            {duration && !isNaN(duration) && calculateTime(duration)}
+          </span>
           {staticDuration}
         </div>
       </div>

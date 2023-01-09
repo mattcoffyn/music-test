@@ -1,6 +1,6 @@
-import { Comfortaa } from '@next/font/google';
+import { Outfit } from '@next/font/google';
 
-const headingFont = Comfortaa({ weight: '700', subsets: ['latin'] });
+const headingFont = Outfit({ weight: '700', subsets: ['latin'] });
 
 const Header = () => (
   <section className="title-header">
