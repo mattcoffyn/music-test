@@ -3,7 +3,6 @@ import { FaPlay } from 'react-icons/fa';
 import { FaPause } from 'react-icons/fa';
 import useMediaQuery from '/components/useMediaQuery';
 import styles from '../styles/AudioPlayer.module.css';
-import { stat } from 'fs';
 
 const AudioPlayer = ({
   trackId,
