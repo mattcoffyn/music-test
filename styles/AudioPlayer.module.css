@@ -61,7 +61,7 @@
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  /* aspect-ratio: 8 / 1; */
+  aspect-ratio: 8 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,16 @@
   opacity: 0;
   z-index: 3;
   cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
   outline: none;
+  aspect-ratio: 8 / 1;
+}
+
+.progressBar:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 @media screen and (max-width: 600px) {
