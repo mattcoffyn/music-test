@@ -6,7 +6,7 @@
     "svgPath": "/io8lktpv9muuarwdjxgg.png",
     "category": "music",
     "type": "audio/mpeg",
-    "duration": "03:29"
+    "duration": 209.594625
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "svgPath": "/bxlnyuovbyuwbnhdgent.svg",
     "category": "spaces",
     "type": "audio/mpeg",
-    "duration": "01:00"
+    "duration": 59.94375
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "svgPath": "/ngivjdofg8k6jaiv0tal.svg",
     "category": "spaces",
     "type": "audio/mpeg",
-    "duration": "01:00"
+    "duration": 59.917688
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "svgPath": "/ula9tgmvxud89sjdyvae.svg",
     "category": "spaces",
     "type": "audio/mpeg",
-    "duration": "01:00"
+    "duration": 59.94375
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "svgPath": "/swos8t4i0nmnan4g25ql.svg",
     "category": "adventureGame",
     "type": "audio/mp3",
-    "duration": "01:00"
+    "duration": 59.977125
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "svgPath": "/drc8zmzeisfsaxwaksah.svg",
     "category": "adventureGame",
     "type": "audio/mp3",
-    "duration": "00:05"
+    "duration": 4.989375
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "svgPath": "/duebtbuxi0v1aft8chzy.svg",
     "category": "adventureGame",
     "type": "audio/mp3",
-    "duration": "01:00"
+    "duration": 60.00325
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "svgPath": "/hpv0k5v772tjgxbzouq4.svg",
     "category": "adventureGame",
     "type": "audio/mp3",
-    "duration": "01:00"
+    "duration": 60.00325
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "svgPath": "/nneogaehg3zklphzok03.svg",
     "category": "music",
     "type": "audio/mpeg",
-    "duration": "04:03"
+    "duration": 243.0784
   },
   {
     "id": 10,
@@ -87,6 +87,6 @@
     "svgPath": "/st7mkv50qwhrhrvkak7b.svg",
     "category": "brief",
     "type": "audio/mpeg",
-    "duration": "04:54"
+    "duration": 294.413333
   }
 ]

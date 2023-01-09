@@ -26,7 +26,7 @@ const AudioPlayer = ({
   const animationRef = useRef(); // reference the animation
 
   useEffect(() => {
-    const seconds = Math.floor(audioPlayer.current.duration);
+    const seconds = Math.floor(staticDuration);
     setDuration(seconds);
     progressBar.current.max = seconds;
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
@@ -74,7 +74,6 @@ const AudioPlayer = ({
 
   const changePlayerCurrentTime = () => {
     const progressPercentage = (progressBar.current.value / duration) * 100;
-    console.log(progressBar.current.value);
     waveformFill.current.style.setProperty(
       '--seek-before-width',
       `${progressPercentage}%`
@@ -118,10 +117,7 @@ const AudioPlayer = ({
             </div>
 
             <div className={styles.duration}>
-              <span style={{ display: 'none' }}>
-                {duration && !isNaN(duration) && calculateTime(duration)}
-              </span>
-              {staticDuration}
+              {duration && !isNaN(duration) && calculateTime(duration)}
             </div>
           </div>
         </div>
@@ -133,10 +129,7 @@ const AudioPlayer = ({
               {calculateTime(currentTime)}
             </div>
             <div className={styles.duration}>
-              <span style={{ display: 'none' }}>
-                {duration && !isNaN(duration) && calculateTime(duration)}
-              </span>
-              {staticDuration}
+              {duration && !isNaN(duration) && calculateTime(duration)}
             </div>
           </div>
           <audio ref={audioPlayer} preload="auto">
