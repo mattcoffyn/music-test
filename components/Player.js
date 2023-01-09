@@ -3,6 +3,7 @@ import { FaPlay } from 'react-icons/fa';
 import { FaPause } from 'react-icons/fa';
 import useMediaQuery from '/components/useMediaQuery';
 import styles from '../styles/AudioPlayer.module.css';
+import { stat } from 'fs';
 
 const AudioPlayer = ({
   trackId,
@@ -29,7 +30,11 @@ const AudioPlayer = ({
     const seconds = Math.floor(staticDuration);
     setDuration(seconds);
     progressBar.current.max = seconds;
-  }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState]);
+  }, [
+    audioPlayer?.current?.loadedmetadata,
+    audioPlayer?.current?.readyState,
+    staticDuration,
+  ]);
 
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs / 60);
