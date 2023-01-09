@@ -1,7 +1,6 @@
 import { AudioPlayer } from '../components/Player';
 import { useState } from 'react';
 import Category from '../components/Category';
-import Header from '../components/ Header';
 import data from '../public/data.json';
 import categoryData from '../public/categories.json';
 
@@ -15,7 +14,6 @@ export default function Index() {
 
   return (
     <>
-      <Header />
       <section className="content">
         {categoryData.map(({ id, catId, title, catText }) => (
           <Category key={id} catId={catId} title={title} catText={catText}>
