@@ -73,10 +73,12 @@ const AudioPlayer = ({
   };
 
   const changePlayerCurrentTime = () => {
-    waveformFill.current.style.setProperty(
-      '--seek-before-width',
-      `${(progressBar.current.value / duration) * 100}%`
-    );
+    const progressPercentage = (progressBar.current.value / duration) * 100;
+    !isNaN(progressPercentage) &&
+      waveformFill.current.style.setProperty(
+        '--seek-before-width',
+        `${(progressBar.current.value / duration) * 100}%`
+      );
     setCurrentTime(progressBar.current.value);
   };
 
