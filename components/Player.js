@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styled from 'styled-components';
 import { FaPlay } from 'react-icons/fa';
 import { FaPause } from 'react-icons/fa';
+import useMediaQuery from '/components/useMediaQuery';
 import styles from '../styles/AudioPlayer.module.css';
 
 const AudioPlayer = ({
@@ -80,47 +80,91 @@ const AudioPlayer = ({
     setCurrentTime(progressBar.current.value);
   };
 
+  const isActive = useMediaQuery('(max-width: 600px)');
+
   return (
-    <div className={styles.audioPlayer}>
-      <span className={styles.title}>{name}</span>
-      <audio ref={audioPlayer} preload="auto">
-        <source src={pathName} type={type} />
-      </audio>
-      <button onClick={togglePlayPause} className={styles.playPause}>
-        {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}
-      </button>
-      <div className={styles.timeAndProgress}>
-        {/* current time */}
-        <div className={styles.currentTime}>{calculateTime(currentTime)}</div>
+    <>
+      {!isActive ? (
+        <div className={styles.audioPlayer}>
+          <span className={styles.title}>{name}</span>
+          <audio ref={audioPlayer} preload="auto">
+            <source src={pathName} type={type} />
+          </audio>
+          <button onClick={togglePlayPause} className={styles.playPause}>
+            {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}
+          </button>
+          <div className={styles.timeAndProgress}>
+            <div className={styles.currentTime}>
+              {calculateTime(currentTime)}
+            </div>
+            <div
+              className={styles.waveformContainer}
+              ref={waveformFill}
+              style={{
+                maskImage: `url(${svgPath})`,
+                WebkitMaskImage: `url(${svgPath})`,
+              }}
+            >
+              <input
+                className={styles.progressBar}
+                type="range"
+                defaultValue="0"
+                step="0.1"
+                ref={progressBar}
+                onChange={changeRange}
+              />
+            </div>
 
-        {/* progress bar */}
-        <div
-          className={styles.waveformContainer}
-          ref={waveformFill}
-          style={{
-            maskImage: `url(${svgPath})`,
-            WebkitMaskImage: `url(${svgPath})`,
-          }}
-        >
-          <input
-            className={styles.progressBar}
-            type="range"
-            defaultValue="0"
-            step="0.1"
-            ref={progressBar}
-            onChange={changeRange}
-          />
+            <div className={styles.duration}>
+              <span style={{ display: 'none' }}>
+                {duration && !isNaN(duration) && calculateTime(duration)}
+              </span>
+              {staticDuration}
+            </div>
+          </div>
         </div>
-
-        {/* duration */}
-        <div className={styles.duration}>
-          <span style={{ display: 'none' }}>
-            {duration && !isNaN(duration) && calculateTime(duration)}
-          </span>
-          {staticDuration}
+      ) : (
+        <div className={styles.audioPlayer}>
+          <div className={styles.titleAndTime}>
+            <span className={styles.title}>{name}</span>
+            <div className={styles.currentTime}>
+              {calculateTime(currentTime)}
+            </div>
+            <div className={styles.duration}>
+              <span style={{ display: 'none' }}>
+                {duration && !isNaN(duration) && calculateTime(duration)}
+              </span>
+              {staticDuration}
+            </div>
+          </div>
+          <audio ref={audioPlayer} preload="auto">
+            <source src={pathName} type={type} />
+          </audio>
+          <button onClick={togglePlayPause} className={styles.playPause}>
+            {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}
+          </button>
+          <div className={styles.timeAndProgress}>
+            <div
+              className={styles.waveformContainer}
+              ref={waveformFill}
+              style={{
+                maskImage: `url(${svgPath})`,
+                WebkitMaskImage: `url(${svgPath})`,
+              }}
+            >
+              <input
+                className={styles.progressBar}
+                type="range"
+                defaultValue="0"
+                step="0.1"
+                ref={progressBar}
+                onChange={changeRange}
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 
