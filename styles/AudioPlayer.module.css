@@ -140,4 +140,16 @@
     width: 100%;
     margin: 0;
   }
+
+  .playPause {
+    margin: 1rem 0;
+  }
+
+  .currentTime {
+    margin: 0;
+  }
+
+  .timeAndProgress {
+    display: block;
+  }
 }

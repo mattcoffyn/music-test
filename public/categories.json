@@ -3,13 +3,13 @@
     "id": 1,
     "catId": "spaces",
     "title": "Spaces",
-    "catText": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, odit dolor. Molestias natus adipisci neque enim sit magni reiciendis eos sunt illum nisi, fugit cum blanditiis modi, nihil numquam quod?<br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae culpa beatae in inventore nostrum dicta animi nihil officia aliquam adipisci natus eaque vero quia reiciendis corporis maiores voluptate, earum odit? </p>"
+    "catText": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, odit dolor. Molestias natus adipisci neque enim sit magni reiciendis eos sunt illum nisi, fugit cum blanditiis modi, nihil numquam quod?</p>"
   },
   {
     "id": 2,
     "catId": "adventureGame",
     "title": "Adventure Game",
-    "catText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero metus, mattis eu nulla sed, pellentesque mattis diam. Fusce mollis sem vehicula nisi suscipit, vitae maximus leo placerat. Pellentesque nec commodo ipsum. Cras convallis metus vitae interdum viverra. Mauris mollis aliquet sodales.<br><br>Aliquam at lectus non nulla convallis varius. Pellentesque urna felis, pharetra in risus quis, pellentesque commodo nunc. Pellentesque vitae ornare massa. Nunc volutpat, lorem nec tempus pharetra, metus diam hendrerit eros, in porta nunc felis at orci. Vestibulum at est erat. Aenean ut sem eros. Aenean viverra commodo eros quis blandit. Vestibulum non augue eget libero hendrerit elementum non nec est. Etiam efficitur ipsum in lacus ornare, ut aliquet ipsum iaculis. Etiam consectetur mauris eget dui egestas, et suscipit quam placerat. Nullam eget leo fringilla, auctor turpis non, feugiat tortor.</p>"
+    "catText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero metus, mattis eu nulla sed, pellentesque mattis diam. Fusce mollis sem vehicula nisi suscipit, vitae maximus leo placerat. Pellentesque nec commodo ipsum. Cras convallis metus vitae interdum viverra. Mauris mollis aliquet sodales.</p>"
   },
   {
     "id": 3,
