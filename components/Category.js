@@ -1,7 +1,7 @@
 const Category = ({ title, catText, children }) => (
   <div className="category">
     <article className="info">
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <div className="text" dangerouslySetInnerHTML={{ __html: catText }}></div>
     </article>
     {children}
