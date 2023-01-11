@@ -63,6 +63,24 @@
     "duration": 60.00325
   },
   {
+    "id": 8,
+    "name": "Droid Battle Loop",
+    "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673257949/Music/adventuregame/tpntnirpsrg2rfmlajin.mp3",
+    "svgPath": "/hpv0k5v772tjgxbzouq4.svg",
+    "category": "adventureGame",
+    "type": "audio/mp3",
+    "duration": 60.00325
+  },
+  {
+    "id": 9,
+    "name": "Gürlitzer",
+    "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673188470/Music/music/e9iuiu4jlboog3fyk6tq.mp3",
+    "svgPath": "/nneogaehg3zklphzok03.svg",
+    "category": "music",
+    "type": "audio/mpeg",
+    "duration": 243.0784
+  },
+  {
     "id": 10,
     "name": "Hackers",
     "path": "https://res.cloudinary.com/dsjs9ozws/video/upload/v1673188854/Music/brief/vjs4maenx9q8h5z6l47y.mp3",

@@ -1,13 +1,12 @@
 .audioPlayer {
   width: 100%;
   max-width: 970px;
+  align-self: start;
   display: grid;
   grid-template-columns: auto 1fr;
   padding: 1rem 0;
   margin: 0;
-  /* background: var(--highlight1); */
   border-top: 4px solid var(--primary);
-  /* border-radius: 10px; */
 }
 
 .audioPlayer:last-of-type {
