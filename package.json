@@ -15,7 +15,8 @@
     "react-audio-player": "^0.17.0",
     "react-dom": "latest",
     "react-icons": "^4.7.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",

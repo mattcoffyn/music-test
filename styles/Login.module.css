@@ -1,0 +1,42 @@
+.login {
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginLabel span {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.loginLabel input {
+  margin-bottom: 1rem;
+  height: 3rem;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 0 1rem;
+  border: 1px solid var(--primary);
+  /* background: var(--background2); */
+  color: var(--primary);
+}
+
+.loginButton {
+  height: 3rem;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 0;
+  border: 1px solid var(--primary);
+  background: var(--background);
+}
